@@ -5,6 +5,8 @@ using UnityEngine;
 public class SpawnManager : MonoBehaviour
 {
     public GameObject[] animalPrefabs;
+    private int intervalOfX = 16;
+    private int spawnPosZ = 10; 
    //  public int animalIndex;
     // Start is called before the first frame update
     void Start()
@@ -19,9 +21,15 @@ public class SpawnManager : MonoBehaviour
         {
             int indexCount = Random.Range(0, animalPrefabs.Length);
 
+            // ONLY WOULD LIKE TO RANDOMIZE transform.position.x & transform.position.z
+            int randomX = Random.Range(-intervalOfX, intervalOfX);
+
+            Debug.Log("Random z coodinate: " + randomX);
+
+            Vector3 spawnPos = new Vector3(randomX, 0, spawnPosZ);
             // Debug.Log("There are " + indexCount);
             // Debug.Log("You are pressing s");
-            Instantiate((animalPrefabs[indexCount]) , new Vector3(0, 0, 20), animalPrefabs[indexCount].transform.rotation);
+            Instantiate((animalPrefabs[indexCount]) , spawnPos, animalPrefabs[indexCount].transform.rotation);
         }
     }
 }
