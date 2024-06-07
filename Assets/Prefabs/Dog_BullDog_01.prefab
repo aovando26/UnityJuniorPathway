@@ -1884,6 +1884,8 @@ GameObject:
   - component: {fileID: 3268137639698847574}
   - component: {fileID: 7975947682806268609}
   - component: {fileID: 917876993998994265}
+  - component: {fileID: 5156186032704883231}
+  - component: {fileID: 7334405119909037637}
   m_Layer: 0
   m_Name: Dog_BullDog_01
   m_TagString: Untagged
@@ -1987,6 +1989,39 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b1cbec0543a94fd4185a2fbd857e739e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &5156186032704883231
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2342754811146967601}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.15463111, y: 0.23484904, z: 0.28421345}
+  m_Center: {x: 0.0030849164, y: 0.09872968, z: 0.024681982}
+--- !u!114 &7334405119909037637
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2342754811146967601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 521c38c6596b0a540905c4dcc39e9971, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2392871500279394403

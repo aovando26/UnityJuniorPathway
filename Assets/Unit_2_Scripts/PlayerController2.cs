@@ -29,7 +29,11 @@ public class PlayerController2 : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("Pizza is spawning from player");
-            Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation); 
+            
+            Vector3 posPrefab = new Vector3(transform.position.x, transform.position.y + 1.0f, transform.position.z);
+
+            Instantiate(projectilePrefab, posPrefab, projectilePrefab.transform.rotation);
+            // Debug.Log(transform.position);
         }
     }
 }
